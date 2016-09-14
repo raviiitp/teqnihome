@@ -55,4 +55,38 @@ public class TeamStructurePK implements Serializable{
 	public void setStudentId(String studentId) {
 		this.studentId = studentId;
 	}
+
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((studentId == null) ? 0 : studentId.hashCode());
+		result = prime * result + ((teamId == null) ? 0 : teamId.hashCode());
+		return result;
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TeamStructurePK other = (TeamStructurePK) obj;
+		if (studentId == null) {
+			if (other.studentId != null)
+				return false;
+		} else if (!studentId.equals(other.studentId))
+			return false;
+		if (teamId == null) {
+			if (other.teamId != null)
+				return false;
+		} else if (!teamId.equals(other.teamId))
+			return false;
+		return true;
+	}
+	
 }

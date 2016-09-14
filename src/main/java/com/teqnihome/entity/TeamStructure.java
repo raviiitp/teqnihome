@@ -62,6 +62,43 @@ public class TeamStructure implements Serializable {
 	}
 
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((studentName == null) ? 0 : studentName.hashCode());
+		result = prime * result + ((teamName == null) ? 0 : teamName.hashCode());
+		result = prime * result + ((teamStructurePK == null) ? 0 : teamStructurePK.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TeamStructure other = (TeamStructure) obj;
+		if (studentName == null) {
+			if (other.studentName != null)
+				return false;
+		} else if (!studentName.equals(other.studentName))
+			return false;
+		if (teamName == null) {
+			if (other.teamName != null)
+				return false;
+		} else if (!teamName.equals(other.teamName))
+			return false;
+		if (teamStructurePK == null) {
+			if (other.teamStructurePK != null)
+				return false;
+		} else if (!teamStructurePK.equals(other.teamStructurePK))
+			return false;
+		return true;
+	}
+
+	@Override
 	public String toString() {
 		return "TeamStructure [teamStructurePK=" + teamStructurePK + ", teamName=" + teamName + ", studentName=" + studentName + "]";
 	}
