@@ -20,6 +20,8 @@ public class Congifuration extends WebMvcConfigurerAdapter {
 		dataSource.setUrl("jdbc:mysql://localhost:3306/teqnihome?autoReconnect=true&useSSL=false");
 		dataSource.setUsername("root");
 		dataSource.setPassword("root");
+		
+		
 		return dataSource;
 	}
 
