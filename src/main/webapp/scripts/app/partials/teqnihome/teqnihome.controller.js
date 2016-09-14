@@ -23,6 +23,8 @@ angular.module('teqnihome')
 
         var updatedStudentInfo = {};
 
+        $scope.clean = true;
+
         $scope.onDropComplete=function(student, evt, teamName){
             $scope.teams[teamName][student[0]] = student[1];
             if(updatedStudentInfo[student[0]] == undefined){
@@ -30,6 +32,8 @@ angular.module('teqnihome')
             }
             updatedStudentInfo[student[0]] = student[1];
             updatedStudentInfo[student[0]]["teamName"] = teamName;
+
+            $scope.clean = false;
         };
 
         $scope.onDragSuccess=function(student, evt, teamName){
@@ -44,7 +48,7 @@ angular.module('teqnihome')
                     then(function (result) {
                         deferredObject.resolve(result);
 
-
+                        $scope.clean = true;
 
                     }, function (errorMsg) {
                         deferredObject.reject(errorMsg);
