@@ -1,4 +1,4 @@
-package com.teqnihome.service;
+package com.teqnihome2.service;
 
 import java.util.Map;
 import java.util.Set;
@@ -6,8 +6,8 @@ import java.util.Set;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.teqnihome.entity.TeamStructure;
-import com.teqnihome.entity.TeamStructurePK;
+import com.teqnihome2.entity.TeamStructure;
+import com.teqnihome2.entity.TeamStructurePK;
 
 @Named(value="TeamUpdateService")
 public class TeamUpdateService {

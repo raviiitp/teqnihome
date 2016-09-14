@@ -1,4 +1,4 @@
-package com.teqnihome.service;
+package com.teqnihome2.service;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import javax.inject.Inject;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.teqnihome.dao.TeamStructureDAOImpl;
-import com.teqnihome.entity.TeamStructure;
+import com.teqnihome2.dao.TeamStructureDAOImpl;
+import com.teqnihome2.entity.TeamStructure;
 
 @Service
 public class TeamStructureServiceImpl implements TeamStructureService {

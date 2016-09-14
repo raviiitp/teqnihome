@@ -1,4 +1,4 @@
-package com.teqnihome.rest;
+package com.teqnihome2.rest;
 
 import java.util.List;
 import java.util.Map;
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.teqnihome.entity.TeamStructure;
-import com.teqnihome.service.TeamStructureServiceImpl;
-import com.teqnihome.service.TeamUpdateService;
+import com.teqnihome2.entity.TeamStructure;
+import com.teqnihome2.service.TeamStructureServiceImpl;
+import com.teqnihome2.service.TeamUpdateService;
 
 @RestController
 public class THRestController {

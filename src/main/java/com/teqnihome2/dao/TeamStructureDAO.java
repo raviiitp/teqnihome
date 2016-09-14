@@ -1,10 +1,10 @@
-package com.teqnihome.service;
+package com.teqnihome2.dao;
 
 import java.util.List;
 
-import com.teqnihome.entity.TeamStructure;
+import com.teqnihome2.entity.TeamStructure;
 
-public interface TeamStructureService {
+public interface TeamStructureDAO {
 	public void addTeam(TeamStructure p);
 	public void updateTeam(TeamStructure p);
 	public List<TeamStructure> listTeams();

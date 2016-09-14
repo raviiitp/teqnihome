@@ -1,4 +1,4 @@
-package com.teqnihome;
+package com.teqnihome2;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -12,12 +12,12 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
-public class TeqnihomeApplication {
+public class Teqnihome2Application {
 	
-	private static final Logger log = LoggerFactory.getLogger(TeqnihomeApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(Teqnihome2Application.class);
 	
     public static void main(String[] args) throws UnknownHostException {
-		SpringApplication app = new SpringApplication(TeqnihomeApplication.class);
+		SpringApplication app = new SpringApplication(Teqnihome2Application.class);
 		app.setBannerMode(Banner.Mode.OFF);
 
 		ApplicationContext ctx = app.run(args);

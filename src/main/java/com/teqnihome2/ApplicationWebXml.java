@@ -1,5 +1,5 @@
 
-package com.teqnihome;
+package com.teqnihome2;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +18,7 @@ public class ApplicationWebXml extends SpringBootServletInitializer {
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.profiles(addDefaultProfile())
                 .bannerMode(Banner.Mode.OFF)
-                .sources(TeqnihomeApplication.class);
+                .sources(Teqnihome2Application.class);
     }
 
     /**

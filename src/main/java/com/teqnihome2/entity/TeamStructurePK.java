@@ -1,4 +1,4 @@
-package com.teqnihome.entity;
+package com.teqnihome2.entity;
 
 import java.io.Serializable;
 import java.util.UUID;
