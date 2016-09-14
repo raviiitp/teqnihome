@@ -25,7 +25,7 @@ public class Congifuration extends WebMvcConfigurerAdapter {
 		return dataSource;
 	}
 
-	@Bean
+	@Bean(name="SessionFactory")
 	public LocalSessionFactoryBean SessioFactory() {
 		LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
 		sessionFactoryBean.setDataSource(getDataSource());
