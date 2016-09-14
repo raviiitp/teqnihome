@@ -7,7 +7,6 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +22,7 @@ import com.teqnihome.service.TeamUpdateService;
 @RestController
 public class THRestController {
 	
-	@Autowired
+	@Inject
 	private TeamStructureServiceImpl tss;
 	
 	@Inject

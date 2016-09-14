@@ -3,9 +3,8 @@ package com.teqnihome.service;
 import java.util.Map;
 import java.util.Set;
 
+import javax.inject.Inject;
 import javax.inject.Named;
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.teqnihome.entity.TeamStructure;
 import com.teqnihome.entity.TeamStructurePK;
@@ -14,7 +13,7 @@ import com.teqnihome.entity.TeamStructurePK;
 public class TeamUpdateService {
 	
 
-	@Autowired
+	@Inject
 	private TeamStructureServiceImpl tss;
 	
 	public void updateTeamInfo(Map<String, Map<String, String>> teamInfo){

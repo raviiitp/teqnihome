@@ -3,9 +3,8 @@ package com.teqnihome.tableInit;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 import javax.inject.Named;
-
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.teqnihome.entity.TeamStructure;
 import com.teqnihome.entity.TeamStructurePK;
@@ -14,7 +13,7 @@ import com.teqnihome.service.TeamStructureServiceImpl;
 @Named(value="TableInitializer")
 public class TableInitializer {
 	
-	@Autowired
+	@Inject
 	private TeamStructureServiceImpl tss;
 	
 	@PostConstruct

@@ -2,11 +2,12 @@ package com.teqnihome.dao;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.teqnihome.entity.TeamStructure;
@@ -17,7 +18,7 @@ public class TeamStructureDAOImpl implements TeamStructureDAO {
 
 	private static final Logger logger = LoggerFactory.getLogger(TeamStructureDAOImpl.class);
 
-	@Autowired
+	@Inject
 	private SessionFactory sessionFactory;
 
 	public void setSessionFactory(SessionFactory sf) {
