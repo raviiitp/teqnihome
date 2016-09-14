@@ -1,0 +1,19 @@
+
+<div class="container">
+
+    <div class="row">
+        <h1>Manage students and teams</h1>
+    </div>
+
+    <div class="teamBlock" ng-repeat="(teamName, _teams) in teams">
+        <div class="teamName" ng-bind="teamName"></div>
+        <div class="teamDropArea" ng-drop="true" ng-drop-success="onDropComplete($data, $event, teamName)">
+            <div class="studentBlock" ng-repeat="(studentName, studentInfo) in _teams" ng-drag="true" ng-drag-data="[studentName, studentInfo]" data-allow-transform="true" ng-drag-success="onDragSuccess($data, $event, teamName)" ng-bind="studentName">
+            </div>
+        </div>
+    </div>
+
+    <md-content>
+        <md-button class="md-raised md-primary" ng-click="updateTeamStructure()">Update</md-button>
+    </md-content>
+</div>
