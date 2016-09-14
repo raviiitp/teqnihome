@@ -15,7 +15,7 @@ import com.teqnihome2.entity.TeamStructure;
 @Configuration
 public class Congifuration extends WebMvcConfigurerAdapter {
 
-/*	@Bean
+	@Bean
 	public DataSource getDataSource() {
 		String databaseUrl = System.getenv("DATABASE_URL");
 
@@ -40,9 +40,9 @@ public class Congifuration extends WebMvcConfigurerAdapter {
 		dataSource.setTestOnReturn(true);
 		dataSource.setValidationQuery("SELECT 1");
 		return dataSource;
-	}*/
+	}
 	
-	@Bean
+	/*@Bean
 	public DataSource getDataSource() {
 		
 		org.apache.tomcat.jdbc.pool.DataSource dataSource = new org.apache.tomcat.jdbc.pool.DataSource();
@@ -55,7 +55,7 @@ public class Congifuration extends WebMvcConfigurerAdapter {
 		dataSource.setTestOnReturn(true);
 		dataSource.setValidationQuery("SELECT 1");
 		return dataSource;
-	}
+	}*/
 
 	@Bean
 	public LocalSessionFactoryBean SessioFactory() {
